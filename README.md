@@ -11,12 +11,13 @@
     alt="pwa-logo" 
     width=400px
   />
-<p/>
+</p>
 
 Twitter PWA on mobile Firefox has an issue where system status bar (that bar where your battery, 
 clock and notifications are shown) has white background. Not only it looks awful when dark mode is enabled
 but also font color is white. So it makes it impractical.
-This script basiclly overwrites old manifest.json file with a new one.
+This script fixes that by removing unnecessary `theme_color` parameters from sites `manifest.json`.
+Currently it basically overwrites old manifest.json url with with a new one.
 It's kinda a hack but it works.
 
 ## Installation
