@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Twitter PWA statusbar fixer
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Enables dark background in tweeter
+// @namespace    https://github.com/hyperstown/twitter-pwa-fix/
+// @version      1.1
+// @description  Enables dark background in twitter
 // @author       hyperstown
 // @match        https://twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -11,7 +11,8 @@
 
 (function() {
     'use strict';
-    let m = document.head.querySelector("link[rel='manifest']");
-    m.href = "https://raw.githubusercontent.com/hyperstown/web_scripts/main/twitter/manifest.json";
-    m.crossOrigin = "";
+    let metaTag = document.createElement('meta');
+    metaTag.setAttribute('name', 'theme-color');
+    metaTag.setAttribute('content', '#181a1b');
+    document.head.appendChild(metaTag);
 })();
