@@ -15,6 +15,6 @@ function listener(details) {
 
 browser.webRequest.onBeforeRequest.addListener(
   listener,
-  { urls: ["https://twitter.com/manifest.json"], types: ["main_frame"] },
+  { urls: ["https://twitter.com/manifest.json"] },
   ["blocking"]
 );
