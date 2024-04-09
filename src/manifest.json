@@ -3,7 +3,7 @@
   "description": "Altering HTTP responses",
   "manifest_version": 2,
   "name": "twitter-pwa-fix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage_url": "https://github.com/hyperstown/twitter-pwa-fix/",
   "icons": {
     "48": "logo.svg"
@@ -19,7 +19,10 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "strict_min_version": "57.0a1"
+      "strict_min_version": "114.0"
+    },
+    "gecko_android": {
+      "strict_min_version": "114.0"
     }
   }
 
