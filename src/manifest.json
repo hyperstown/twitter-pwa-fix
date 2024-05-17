@@ -3,14 +3,14 @@
   "description": "Altering HTTP responses",
   "manifest_version": 2,
   "name": "twitter-pwa-fix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage_url": "https://github.com/hyperstown/twitter-pwa-fix/",
   "icons": {
     "48": "logo.svg"
   },
 
   "permissions": [
-    "webRequest", "webRequestBlocking", "https://twitter.com/"
+    "webRequest", "webRequestBlocking", "https://twitter.com/", "https://x.com/"
   ],
 
   "background": {
